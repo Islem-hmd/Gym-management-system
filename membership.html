@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AurumFit - Membership</title>
+</head>
+<body>
+<!--Navigation-->
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<header>
+    <h1>Membership Plans</h1>
+    <p>Choose the perfect membership plan that suits your fitness goals and lifestyle. Our flexible options are designed to provide you with the best value and access to our top-notch facilities.</p>
+</header>
+<main>
+    <!-- Membership Plans Section -->
+        <section id="membership-plans">
+            <h2>Our Membership Options</h2>
+            <div class="plans-container">
+                <!-- Bronze Plan -->
+                <div class="plan-card">
+                    <h3>Bronze Plan</h3>
+                    <p class="plan-subtitle">Monthly Membership</p>
+                    
+                    <dl>
+                        <dt>✓</dt>
+                        <dd>Full gym access during staffed hours</dd>
+                        <dt>✓</dt>
+                        <dd>Free fitness assessment</dd>
+                        <dt>✓</dt>
+                        <dd>Locker room with shower access</dd>
+                        <dt>✓</dt>
+                        <dd>1 group class per month</dd>
+                        <dt>✗</dt>
+                        <dd>Guest privileges</dd>
+                        <dt>✗</dt>
+                        <dd>Nutrition consultation</dd>
+                    </dl>
+                    <p class="price">$30 / month</p>
+                </div>
+
+                <!-- Silver Plan -->
+                <div class="plan-card">
+                    <h3>Silver Plan</h3>
+                    <p class="plan-subtitle">Quarterly Membership (3 months)</p>
+                    
+                    <dl>
+                        <dt>✓</dt>
+                        <dd>Full gym access anytime</dd>
+                        <dt>✓</dt>
+                        <dd>Free fitness assessment</dd>
+                        <dt>✓</dt>
+                        <dd>Locker room with shower access</dd>
+                        <dt>✓</dt>
+                        <dd>5 group classes per month</dd>
+                        <dt>✓</dt>
+                        <dd>1 guest pass per month</dd>
+                        <dt>✗</dt>
+                        <dd>Nutrition consultation</dd>
+                    </dl>
+                    <p class="price">$70 / quarter</p>
+                </div>
+
+                <!-- Gold Plan -->
+                <div class="plan-card">
+                    <h3>Gold Plan</h3>
+                    <p class="plan-subtitle">Annual Membership (12 months)</p>
+                    
+                    <dl>
+                        <dt>✓</dt>
+                        <dd>Full gym access anytime</dd>
+                        <dt>✓</dt>
+                        <dd>Free fitness assessment</dd>
+                        <dt>✓</dt>
+                        <dd>Locker room with shower access</dd>
+                        <dt>✓</dt>
+                        <dd>Unlimited group classes</dd>
+                        <dt>✓</dt>
+                        <dd>2 guest passes per month</dd>
+                        <dt>✓</dt>
+                        <dd>Quarterly nutrition consultation</dd>
+                    </dl>
+                    <p class="price">$290 / year</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section>
+            <h2>Become a Member Today</h2>
+
+            <form action="#" method="post">
+                <!-- Personal Information Fieldset -->
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </p>
+                    <p>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </p>
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </p>
+                    <p>
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" rows="3" placeholder="Enter your full address"></textarea>
+                    </p>
+                </fieldset>
+
+                <!-- Plan Selection Fieldset -->
+                <fieldset>
+                    <legend>Select Your Membership Plan</legend>
+                    <p>
+                        <input type="radio" id="plan-bronze" name="membership-plan" value="bronze" required>
+                        <label for="plan-bronze">Bronze Plan - Monthly ($30/month)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="plan-silver" name="membership-plan" value="silver">
+                        <label for="plan-silver">Silver Plan - Quarterly ($70/quarter)</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="plan-gold" name="membership-plan" value="gold">
+                        <label for="plan-gold">Gold Plan - Annual ($290/year)</label>
+                    </p>
+                    <p>
+                        <label for="start-date">Preferred Start Date:</label>
+                        <input type="date" id="start-date" name="start-date">
+                    </p>
+                </fieldset>
+
+                <!-- Additional Information Fieldset -->
+                <fieldset>
+                    <legend>Additional Information</legend> 
+                    <p>
+                        <label for="hear-about">How did you hear about us?</label>
+                        <select id="hear-about" name="hear-about">
+                            <option value="">-- Please select --</option>
+                            <option value="social">Social Media</option>
+                            <option value="friend">Friend/Family</option>
+                            <option value="walkin">Walk-in</option>
+                            <option value="ad">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="goals">Fitness Goals (optional):</label>
+                        <textarea id="goals" name="goals" rows="4" placeholder="Tell us about your fitness goals..."></textarea>
+                    </p>
+                </fieldset>
+
+                <!-- Terms and Conditions Fieldset -->
+                <fieldset>
+                    <legend>Terms and Conditions</legend>
+                    
+                    <p>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">terms and conditions</a> and <a href="#">membership policy</a></label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="updates" name="updates">
+                        <label for="updates">I would like to receive updates and newsletters via email</label>
+                    </p>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
+        </section>
+
+        <!-- Payment Methods Section -->
+        <section>
+            <h3>Accepted Payment Methods</h3>
+            <div class="payment-icons">
+                <img src="images/visa-logo.svg" alt="Visa">
+                <img src="images/paypal-logo.svg" alt="PayPal">
+                <img src="images/bank-transfer.svg" alt="Bank-transfer">
+                <img src="images/mastercard.svg" alt="Mastercard">
+                <img src="images/bitcoin-circle.svg" alt="Bitcoin">
+                <p><small>Payment processing powered by Stripe - Secure and encrypted</small></p>
+            </div>
+        </section>
+</main>
+<footer>
+    <p>&copy; 2024 AurumFit. All rights reserved.</p>
+</body>
+</html>
