@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin-Authentication</title>
+</head>
+<body>
+
+    <header>
+        <h1>Admin Authentication</h1>
+            <p>Please enter your credentials to access the admin dashboard.</p>
+    </header>
+
+<main>
+    <section id="login-page">
+        <div class="login">
+            
+            <form method="POST" action="#">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required placeholder="Enter your username">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            
+            <div class="error-message" id="errorMessage">
+                Invalid username or password. Please try again.
+            </div>
+
+            <div class="back-link">
+                <a href="index.html">Return to Main Site</a>
+            </div>
+        </div>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2026 Aurum Fit. All rights reserved.</p>
+    </footer>
+</body>
+</html>
